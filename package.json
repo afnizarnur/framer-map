@@ -1,0 +1,15 @@
+{
+  "name": "framer-mapbox.framer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "mapbox-gl": "^0.35.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Afnizar Nur Ghifari",
+  "license": "ISC"
+}
