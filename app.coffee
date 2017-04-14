@@ -1,4 +1,4 @@
-{ mapboxgl, mapbox } = require "npm"
+{ mapboxgl } = require "npm"
 
 # Mapbox Configuration
 mapWidth = Screen.width
@@ -16,10 +16,6 @@ mapElement.style.height = mapHeight + "px"
 myAccessToken = "pk.eyJ1IjoiYWZuaXphcm51ciIsImEiOiJjajFobjQ4ZG8wMDFhMzJwNnQ1NGI5b2xhIn0.EKqbXESOKEUL7chG1QmgYA"
 
 mapboxgl.accessToken = myAccessToken
-
-datasetID = "cj1hmg5lk001c33p6e1yp0fmi"
-
-mapboxClient = new mapbox(myAccessToken)
 
 # Initialize Map
 map = new mapboxgl.Map
