@@ -21,7 +21,6 @@ datasetID = "cj1hmg5lk001c33p6e1yp0fmi"
 
 mapboxClient = new mapbox(myAccessToken)
 
-
 # Initialize Map
 map = new mapboxgl.Map
 	container: mapElement
@@ -34,4 +33,15 @@ map = new mapboxgl.Map
 map.flyTo
 	speed: 2
 	zoom: 19
+
+# Loading the map
+map.on "load", () ->
+	mark = document.createElement('div')
+	mark.className = "location-marker"
+	mark.style.backgroundColor = "deepskyblue"
+	mark.style.width = "100px"
+	mark.style.height = "100px"
+	mark.style.borderRadius = "100px"
+	
+	marker = new mapboxgl.Marker(mark).setLngLat([107.632845, -6.976556]).addTo(map)
 
