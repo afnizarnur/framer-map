@@ -21,7 +21,7 @@ mapboxgl.accessToken = myAccessToken
 map = new mapboxgl.Map
 	container: mapElement
 	zoom: 2
-	center: [107.632845, -6.976556]
+	center: [106.830235, -6.173539]
 	style: 'mapbox://styles/mapbox/streets-v10'
 	hash: true
 	
@@ -35,9 +35,11 @@ map.on "load", () ->
 	mark = document.createElement('div')
 	mark.className = "location-marker"
 	mark.style.backgroundColor = "deepskyblue"
-	mark.style.width = "100px"
-	mark.style.height = "100px"
+	mark.style.width = "30px"
+	mark.style.height = "30px"
 	mark.style.borderRadius = "100px"
 	
-	marker = new mapboxgl.Marker(mark).setLngLat([107.632845, -6.976556]).addTo(map)
+	marker = new mapboxgl.Marker(mark).setLngLat([106.830235, -6.173539]).addTo(map)
+	
+	
 
